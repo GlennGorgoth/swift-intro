@@ -30,8 +30,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ew5-3q-FJA">
-                                <rect key="frame" x="253" y="175" width="95" height="30"/>
-                                <state key="normal" title="Secret Button"/>
+                                <rect key="frame" x="258" y="175" width="85" height="30"/>
+                                <state key="normal" title="Subtract Me"/>
                                 <connections>
                                     <action selector="newbuttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ig2-b3-Gwz"/>
                                 </connections>
