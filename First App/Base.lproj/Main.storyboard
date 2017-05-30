@@ -17,14 +17,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGd-4b-P3y">
-                                <rect key="frame" x="254" y="70" width="94" height="21"/>
+                                <rect key="frame" x="253" y="70" width="94" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFU-Ct-ppN">
-                                <rect key="frame" x="270" y="110" width="60" height="30"/>
-                                <state key="normal" title="Push Me"/>
+                                <rect key="frame" x="274" y="110" width="53" height="30"/>
+                                <state key="normal" title="Add Me"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VUs-vH-PsO"/>
                                 </connections>
@@ -36,18 +36,40 @@
                                     <action selector="newbuttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ig2-b3-Gwz"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lv1-hJ-re3">
+                                <rect key="frame" x="250" y="220" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="yOe-z6-iS8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ftr-NG-xft">
+                                <rect key="frame" x="250" y="266" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="RCT-CQ-GEA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Lv1-hJ-re3" firstAttribute="top" secondItem="Ew5-3q-FJA" secondAttribute="bottom" constant="15" id="2qa-gf-pcE"/>
                             <constraint firstItem="SFU-Ct-ppN" firstAttribute="top" secondItem="dGd-4b-P3y" secondAttribute="bottom" constant="20" id="Ihm-cR-YFI"/>
+                            <constraint firstItem="Lv1-hJ-re3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YeF-nt-Fd4"/>
+                            <constraint firstItem="ftr-NG-xft" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ae7-RO-c8d"/>
                             <constraint firstItem="dGd-4b-P3y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="fxC-2U-Qch"/>
                             <constraint firstItem="dGd-4b-P3y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mSO-HF-UaN"/>
                             <constraint firstItem="Ew5-3q-FJA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qZU-Q9-hUg"/>
                             <constraint firstItem="Ew5-3q-FJA" firstAttribute="top" secondItem="SFU-Ct-ppN" secondAttribute="bottom" constant="35" id="rqr-1p-0ks"/>
+                            <constraint firstItem="ftr-NG-xft" firstAttribute="top" secondItem="Lv1-hJ-re3" secondAttribute="bottom" constant="15" id="xLt-4Q-VAX"/>
                             <constraint firstItem="SFU-Ct-ppN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yno-Hk-bxx"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="Lv1-hJ-re3" id="BZz-3h-mrP"/>
+                        <outlet property="text2" destination="ftr-NG-xft" id="maV-dv-FxV"/>
                         <outlet property="theLabel" destination="dGd-4b-P3y" id="skf-Zn-GqO"/>
                     </connections>
                 </viewController>
